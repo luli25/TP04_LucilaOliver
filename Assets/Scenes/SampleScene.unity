@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 18614546}
   - component: {fileID: 18614547}
+  - component: {fileID: 18614548}
   m_Layer: 0
   m_Name: Trees
   m_TagString: Untagged
@@ -207,6 +208,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &18614548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18614545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: 0.3
 --- !u!1 &40170383
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +230,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 40170384}
-  - component: {fileID: 40170385}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -242,18 +255,6 @@ Transform:
   - {fileID: 1483085817}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &40170385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40170383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &226158918
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +267,7 @@ GameObject:
   - component: {fileID: 226158920}
   - component: {fileID: 226158922}
   - component: {fileID: 226158921}
+  - component: {fileID: 226158923}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -412,6 +414,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &226158923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226158918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: 0
 --- !u!1 &253964294
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 310725170}
   - component: {fileID: 310725171}
+  - component: {fileID: 310725172}
   m_Layer: 0
   m_Name: Trees
   m_TagString: Untagged
@@ -580,6 +596,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &310725172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310725169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: 0.3
 --- !u!1 &338763192
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,6 +619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 338763193}
   - component: {fileID: 338763194}
+  - component: {fileID: 338763195}
   m_Layer: 0
   m_Name: Mountains
   m_TagString: Untagged
@@ -664,6 +694,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &338763195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338763192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: 0.7
 --- !u!1 &421443716
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 433194476}
   - component: {fileID: 433194477}
+  - component: {fileID: 433194478}
   m_Layer: 0
   m_Name: Mountains
   m_TagString: Untagged
@@ -780,6 +824,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &433194478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433194475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: 0.7
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +985,7 @@ GameObject:
   m_Component:
   - component: {fileID: 538734314}
   - component: {fileID: 538734315}
+  - component: {fileID: 538734316}
   m_Layer: 0
   m_Name: Clouds
   m_TagString: Untagged
@@ -1002,6 +1060,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &538734316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538734313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: 0.9
 --- !u!1 &543076487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1083,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543076488}
   - component: {fileID: 543076489}
+  - component: {fileID: 543076490}
   m_Layer: 0
   m_Name: Trees
   m_TagString: Untagged
@@ -1086,6 +1158,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &543076490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543076487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: 0.3
 --- !u!1 &616655414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,7 +1180,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 616655415}
-  - component: {fileID: 616655416}
   m_Layer: 0
   m_Name: Mountains
   m_TagString: Untagged
@@ -1121,18 +1205,6 @@ Transform:
   - {fileID: 752688849}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &616655416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 616655414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,6 +1361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1003331863}
   - component: {fileID: 1003331864}
+  - component: {fileID: 1003331865}
   m_Layer: 0
   m_Name: Clouds
   m_TagString: Untagged
@@ -1363,6 +1436,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1003331865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003331862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: 0.9
 --- !u!1 &1053079890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,6 +1461,7 @@ GameObject:
   - component: {fileID: 1053079892}
   - component: {fileID: 1053079894}
   - component: {fileID: 1053079893}
+  - component: {fileID: 1053079895}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -1521,6 +1608,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1053079895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053079890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: 0
 --- !u!1 &1062492629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1531,6 +1631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1062492630}
   - component: {fileID: 1062492631}
+  - component: {fileID: 1062492632}
   m_Layer: 0
   m_Name: Mountains
   m_TagString: Untagged
@@ -1605,6 +1706,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1062492632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062492629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: 0.7
 --- !u!1 &1093247836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,7 +1728,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1093247837}
-  - component: {fileID: 1093247838}
   m_Layer: 0
   m_Name: Clouds
   m_TagString: Untagged
@@ -1640,18 +1753,6 @@ Transform:
   - {fileID: 2141328162}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1093247838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1093247836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1215281827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,6 +1861,7 @@ GameObject:
   - component: {fileID: 1387782355}
   - component: {fileID: 1387782357}
   - component: {fileID: 1387782356}
+  - component: {fileID: 1387782358}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -1906,6 +2008,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1387782358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387782353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: 0
 --- !u!1 &1483085816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,7 +2062,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1647547934}
-  - component: {fileID: 1647547935}
   m_Layer: 0
   m_Name: Trees
   m_TagString: Untagged
@@ -1973,18 +2087,6 @@ Transform:
   - {fileID: 1215281828}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1647547935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647547933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1667374512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,6 +2097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1667374513}
   - component: {fileID: 1667374514}
+  - component: {fileID: 1667374515}
   m_Layer: 0
   m_Name: Clouds
   m_TagString: Untagged
@@ -2069,6 +2172,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1667374515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667374512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74586cebd591ce3438b8280fd4ead51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: 0.9
 --- !u!1 &2141328161
 GameObject:
   m_ObjectHideFlags: 0
