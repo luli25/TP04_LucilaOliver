@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
+    [SerializeField]
+    private GroundDetector groundDetector;
+
     private Rigidbody2D rb;
 
     void Start()
@@ -20,8 +23,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && groundDetector.isGrounded)
         {
+            groundDetector.isGrounded = false;
             animator.SetTrigger("onJump");
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
