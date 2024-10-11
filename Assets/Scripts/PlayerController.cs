@@ -29,5 +29,10 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("onJump");
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
+
+        if(Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            animator.SetTrigger("isSliding");
+        }
     }
 }
