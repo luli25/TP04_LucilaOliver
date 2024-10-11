@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        remainingLives = lives;
     }
 
     // Update is called once per frame
@@ -37,6 +38,22 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.DownArrow))
         {
             animator.SetTrigger("isSliding");
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            animator.SetTrigger("isHurt");
+            remainingLives--;
+            Debug.Log(remainingLives);
+        }
+
+        if(remainingLives == 0)
+        {
+            animator.SetTrigger("playerDead");
+            Time.timeScale = 0;
         }
     }
 }
