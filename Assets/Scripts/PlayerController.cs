@@ -13,11 +13,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GroundDetector groundDetector;
 
+    [SerializeField]
+    private List<Collectibles> collectibles;
+
     private Rigidbody2D rb;
 
     private const int lives = 3;
 
-    private int remainingLives;
+    private int remainingLives = 1;
 
     void Start()
     {
@@ -54,6 +57,25 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetTrigger("playerDead");
             Time.timeScale = 0;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        foreach(Collectibles collectible in collectibles)
+        {
+            if(collision.CompareTag("Life"))
+            {
+               Debug.Log("Player healed!!");
+                Destroy(collision.gameObject);
+                
+
+            } else if(collision.CompareTag("Poison"))
+            {
+               Debug.Log("Player is dead!!");
+                Destroy(collision.gameObject);
+
+            }
         }
     }
 }
