@@ -20,12 +20,13 @@ public class PlayerController : MonoBehaviour
 
     private const int lives = 3;
 
-    private int remainingLives = 1;
+    private int remainingLives;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        remainingLives = lives;
+        //remainingLives = lives;
+        remainingLives = 1;
     }
 
     // Update is called once per frame
@@ -66,13 +67,22 @@ public class PlayerController : MonoBehaviour
         {
             if(collision.CompareTag("Life"))
             {
-               Debug.Log("Player healed!!");
-                Destroy(collision.gameObject);
+               //Debug.Log("Player healed!!");
+                if(remainingLives < lives)
+                {
+                    do
+                    {
+                        remainingLives++;
+
+                    } while (remainingLives < lives);
+                    
+                }
+               Destroy(collision.gameObject);
                 
 
             } else if(collision.CompareTag("Poison"))
             {
-               Debug.Log("Player is dead!!");
+                animator.Play("Dead", 0);
                 Destroy(collision.gameObject);
 
             }
