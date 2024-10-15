@@ -25,8 +25,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //remainingLives = lives;
-        remainingLives = 1;
+        remainingLives = lives;
+        
     }
 
     // Update is called once per frame
