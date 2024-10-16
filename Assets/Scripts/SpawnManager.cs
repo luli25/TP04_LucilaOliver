@@ -10,11 +10,14 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private GameObject endLevel;
 
-    private float respawnTime = 5.0f;
+    [SerializeField]
+    private float spawnTime = 3f;
 
     bool gameStart = false;
 
     private GameObject prefabInstance;
+
+    private bool MaxSpawned;
 
     void Start()
     {
@@ -22,32 +25,29 @@ public class SpawnManager : MonoBehaviour
         StartCoroutine(SpawnEnemies());
     }
 
-    
-    void Update()
-    {
-        
-    }
-
     private void SpawnObstacles()
     {
+
         int randomNumber = Random.Range(0, obstacles.Length);
         prefabInstance = Instantiate(obstacles[randomNumber], transform.position, transform.rotation);
+
     }
 
     IEnumerator SpawnEnemies()
     {
-        while(gameStart)
+        while (gameStart)
         {
-            yield return new WaitForSeconds(respawnTime);
+            yield return new WaitForSeconds(spawnTime);
             SpawnObstacles();
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("endPoint"))
+        if (collision.CompareTag("endLevel"))
         {
             Destroy(prefabInstance, 0);
+            Debug.Log("Instance destroyed");
         }
     }
 }

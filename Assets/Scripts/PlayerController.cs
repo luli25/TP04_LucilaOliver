@@ -67,7 +67,6 @@ public class PlayerController : MonoBehaviour
         {
             if(collision.CompareTag("Life"))
             {
-               //Debug.Log("Player healed!!");
                 if(remainingLives < lives)
                 {
                     do

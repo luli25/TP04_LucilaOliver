@@ -2104,6 +2104,56 @@ Transform:
   - {fileID: 543076488}
   m_Father: {fileID: 1647547934}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1271782120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1271782122}
+  - component: {fileID: 1271782121}
+  m_Layer: 0
+  m_Name: Rock_CollectibleSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1271782121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271782120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a79e7dae669ce44822dd0d0f46f5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacles:
+  - {fileID: 7995332205074860316, guid: 57d431df279baf046a031a3ebb1675ea, type: 3}
+  - {fileID: 740481158453080959, guid: e9bc8dbd390b801488b06186936ce46a, type: 3}
+  - {fileID: 8440358560396621593, guid: a74f1ed6255d59b44b7a068f226b69b1, type: 3}
+  endLevel: {fileID: 1599561448}
+  spawnTime: 6
+--- !u!4 &1271782122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271782120}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.32, y: -3.4, z: -0.813575}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1289571967
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,12 +2513,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e3d2bb6154399429f90facfd474d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 10
+  jumpForce: 6
   animator: {fileID: 1392784477}
   groundDetector: {fileID: 955600839}
   collectibles:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 825439942525336717, guid: e9bc8dbd390b801488b06186936ce46a, type: 3}
+  - {fileID: 4173681323494216218, guid: a74f1ed6255d59b44b7a068f226b69b1, type: 3}
 --- !u!1 &1483085816
 GameObject:
   m_ObjectHideFlags: 0
@@ -2528,7 +2578,7 @@ Transform:
   m_GameObject: {fileID: 1599561448}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.1, y: -0.7443, z: 0.5964408}
+  m_LocalPosition: {x: 12.1, y: 0.12, z: 0.5964408}
   m_LocalScale: {x: 1.4294, y: 8.327794, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2788,9 +2838,9 @@ GameObject:
   - component: {fileID: 1702160196}
   - component: {fileID: 1702160197}
   m_Layer: 0
-  m_Name: ObstaclesSpawner
+  m_Name: AirEnemiesSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2803,7 +2853,7 @@ Transform:
   m_GameObject: {fileID: 1702160195}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.62, y: -1.05, z: -0.52284217}
+  m_LocalPosition: {x: 30.38, y: -0.72, z: -0.52284217}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2822,10 +2872,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacles:
-  - {fileID: 420194753128590603, guid: 3ffa04f4883bd8a45a9bfc799d70ce41, type: 3}
-  - {fileID: 1535888899707779006, guid: 9a6c01c8224c11745832dcfb6b909c6d, type: 3}
-  - {fileID: 6730317071725288683, guid: f9e926480286ab54c98d7583cf4fea0f, type: 3}
+  - {fileID: 6664654947092270577, guid: d4a4e080f22098e4ab11ea1b1c11f450, type: 3}
+  - {fileID: 7995332205074860316, guid: 57d431df279baf046a031a3ebb1675ea, type: 3}
   endLevel: {fileID: 1599561448}
+  spawnTime: 3
 --- !u!1 &2073983404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2926,4 +2976,5 @@ SceneRoots:
   - {fileID: 2073983405}
   - {fileID: 553318704}
   - {fileID: 1702160196}
+  - {fileID: 1271782122}
   - {fileID: 221352210}
