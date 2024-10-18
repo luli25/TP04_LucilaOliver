@@ -7,7 +7,6 @@ TagManager:
   - Enemy
   - Life
   - Poison
-  - endLevel
   layers:
   - Default
   - TransparentFX
