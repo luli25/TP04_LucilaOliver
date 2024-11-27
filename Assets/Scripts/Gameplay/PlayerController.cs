@@ -53,8 +53,8 @@ public class PlayerController : MonoBehaviour
 
     private void Die()
     {
+        GameManager.Instance.ShowGameOverUI();
         animator.SetBool("playerDead", true);
-        Debug.Log("Game Over");
         Time.timeScale = 0;
     }
 }
