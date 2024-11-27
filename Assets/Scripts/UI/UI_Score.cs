@@ -1,13 +1,24 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SocialPlatforms;
 
 public class UI_Score : MonoBehaviour
 {
-    public TMP_Text scoreText;
+    [SerializeField]
+    private TMP_Text scoreText;
 
-    public void UpdateScore(int score)
+    private float score = 0f;
+
+    private float pointsPerSeconds = 1f;
+
+    private void Update()
     {
-        score++;
+        UpdateScore();
+    }
+
+    private void UpdateScore()
+    {
+        score += pointsPerSeconds;
         scoreText.text = score.ToString();
     }
 }

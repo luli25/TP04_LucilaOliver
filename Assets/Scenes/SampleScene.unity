@@ -303,7 +303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -222.8, y: 0}
+  m_AnchoredPosition: {x: -291, y: -7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &103981323
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Score
+  m_text: 'Score:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -389,7 +389,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -22.358261, z: -21.612968, w: -23.848658}
+  m_margin: {x: -14.441231, y: -22.358261, z: -40.86789, w: -23.848658}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3011,7 +3011,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1190992295}
-  - component: {fileID: 1190992294}
+  - component: {fileID: 1190992296}
   m_Layer: 0
   m_Name: GroundEnemySpawner
   m_TagString: Respawn
@@ -3019,22 +3019,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1190992294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1190992293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38a79e7dae669ce44822dd0d0f46f5e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstacles:
-  - {fileID: 7995332205074860316, guid: 57d431df279baf046a031a3ebb1675ea, type: 3}
-  - {fileID: 3059516588994351535, guid: 0439974e88327e64b8a705d7e41be51d, type: 3}
-  spawnTime: 3
 --- !u!4 &1190992295
 Transform:
   m_ObjectHideFlags: 0
@@ -3050,6 +3034,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1190992296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190992293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a79e7dae669ce44822dd0d0f46f5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundObstacles:
+  - {fileID: 7995332205074860316, guid: 57d431df279baf046a031a3ebb1675ea, type: 3}
+  - {fileID: 3059516588994351535, guid: 0439974e88327e64b8a705d7e41be51d, type: 3}
+  flyingObstacles:
+  - {fileID: 7471091074916441671, guid: 7913cae964e40864caeb783a084b09f4, type: 3}
+  - {fileID: 6664654947092270577, guid: d4a4e080f22098e4ab11ea1b1c11f450, type: 3}
+  spawnTime: 3
 --- !u!1 &1215281827
 GameObject:
   m_ObjectHideFlags: 0
@@ -3336,7 +3339,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 26.08397, y: -23.848843, z: 28.320679, w: -26.084435}
+  m_margin: {x: -29.273825, y: -23.848843, z: 28.320679, w: -43.605675}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3667,8 +3670,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14790797, y: -0.048494935}
-  m_Size: {x: 1.9885955, y: 2.4055007}
+  m_Offset: {x: -0.12076211, y: 0.00579679}
+  m_Size: {x: 1.4396453, y: 2.2969172}
   m_Direction: 0
 --- !u!50 &1392784479
 Rigidbody2D:
@@ -3682,7 +3685,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -3709,7 +3712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e3d2bb6154399429f90facfd474d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 6
+  jumpForce: 15
   animator: {fileID: 1392784477}
   groundDetector: {fileID: 955600839}
   collectibles: []
@@ -4093,54 +4096,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 2
---- !u!1 &1702160195
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1702160196}
-  - component: {fileID: 1702160197}
-  m_Layer: 0
-  m_Name: AirEnemiesSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1702160196
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1702160195}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.38, y: -0.96, z: -0.52284217}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1702160197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1702160195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38a79e7dae669ce44822dd0d0f46f5e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstacles:
-  - {fileID: 7471091074916441671, guid: 7913cae964e40864caeb783a084b09f4, type: 3}
-  - {fileID: 6664654947092270577, guid: d4a4e080f22098e4ab11ea1b1c11f450, type: 3}
-  spawnTime: 6
 --- !u!1 &1805834433
 GameObject:
   m_ObjectHideFlags: 0
@@ -4292,6 +4247,5 @@ SceneRoots:
   - {fileID: 40170384}
   - {fileID: 2073983405}
   - {fileID: 553318704}
-  - {fileID: 1702160196}
   - {fileID: 1190992295}
   - {fileID: 1509054446}

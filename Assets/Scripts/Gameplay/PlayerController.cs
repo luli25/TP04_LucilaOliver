@@ -13,9 +13,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GroundDetector groundDetector;
 
-    [SerializeField]
-    private List<Collectibles> collectibles;
-
     private Rigidbody2D rb;
 
     private const int lives = 3;
@@ -54,36 +51,9 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    foreach(Collectibles collectible in collectibles)
-    //    {
-    //        if(collision.CompareTag("Life"))
-    //        {
-    //            if(remainingLives < lives)
-    //            {
-    //                do
-    //                {
-    //                    remainingLives++;
-
-    //                } while (remainingLives < lives);
-
-    //            }
-    //           Destroy(collision.gameObject);
-
-
-    //        } else if(collision.CompareTag("Poison"))
-    //        {
-    //            animator.Play("Dead", 0);
-    //            Destroy(collision.gameObject);
-
-    //        }
-    //    }
-    //}
-
     private void Die()
     {
-        animator.SetBool("playerDead", false);
+        animator.SetBool("playerDead", true);
         Debug.Log("Game Over");
         Time.timeScale = 0;
     }

@@ -5,7 +5,10 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject[] obstacles;
+    private GameObject[] groundObstacles;
+
+    [SerializeField]
+    private GameObject[] flyingObstacles;
 
     [SerializeField]
     private float spawnTime = 3f;
@@ -14,7 +17,7 @@ public class SpawnManager : MonoBehaviour
 
     private GameObject prefabInstance;
 
-    private int MaxSpawned = 1;
+    private int MaxSpawned = 2;
 
     void Start()
     {
@@ -24,9 +27,11 @@ public class SpawnManager : MonoBehaviour
 
     private void SpawnObstacles()
     {
+        Vector3 spawnPos = new Vector3(14, -1.06f, 0);
 
-        int randomNumber = Random.Range(0, obstacles.Length);
-        prefabInstance = Instantiate(obstacles[randomNumber], transform.position, transform.rotation);
+        int randomNumber = Random.Range(0, groundObstacles.Length);
+        prefabInstance = Instantiate(groundObstacles[randomNumber], transform.position, transform.rotation);
+        prefabInstance = Instantiate(flyingObstacles[randomNumber], spawnPos, transform.rotation);
         Destroy(prefabInstance, 10f);
 
     }
