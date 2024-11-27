@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 8394810461525922631}
   - component: {fileID: 3470397673419275542}
   - component: {fileID: 9211095822132539407}
-  - component: {fileID: 8987724423719000818}
   - component: {fileID: 5927268562696092181}
+  - component: {fileID: 50300723041921556}
   m_Layer: 0
   m_Name: Bee-Enemy
   m_TagString: Enemy
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6664654947092270577}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.28, y: -0.82, z: 0}
+  m_LocalPosition: {x: -3.286, y: -2.313, z: 0}
   m_LocalScale: {x: 0.85858, y: 0.85858, z: 0.85858}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -136,8 +136,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &8987724423719000818
-BoxCollider2D:
+--- !u!114 &5927268562696092181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6664654947092270577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7ad55b94ec5714697b047c26a2155e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 5
+--- !u!68 &50300723041921556
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -168,29 +181,25 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000071525574, y: 0.04695773}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.28, y: 1.725}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.217391, y: 1.5997794}
+  m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
---- !u!114 &5927268562696092181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6664654947092270577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f7ad55b94ec5714697b047c26a2155e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemySpeed: 5
+  m_Points:
+  - {x: -1.0289786, y: 0.04200802}
+  - {x: -1.0515972, y: -0.14241001}
+  - {x: -1.0045817, y: -0.29405537}
+  - {x: -0.8571642, y: -0.46382108}
+  - {x: -0.64629936, y: -0.5876447}
+  - {x: -0.39643553, y: -0.65547425}
+  - {x: -0.1863146, y: -0.6888145}
+  - {x: 0.046014532, y: -0.6866018}
+  - {x: 0.10908336, y: -0.6815668}
+  - {x: 0.3787073, y: -0.59180814}
+  - {x: 0.6842018, y: -0.40876776}
+  - {x: 0.847108, y: -0.2579141}
+  - {x: 1.0503802, y: -0.037317332}
+  - {x: 0.948323, y: 0.04366274}
+  - {x: 0.82794106, y: 0.1530288}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

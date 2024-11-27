@@ -11,7 +11,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField]
     private GameObject mainMenuPanel;
 
-    private bool isPause = true;
+    public bool isPause = true;
 
     private void Awake()
     {
@@ -20,13 +20,13 @@ public class MainMenuManager : MonoBehaviour
 
     void Start()
     {
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.P))
         {
             TogglePause();
 

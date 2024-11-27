@@ -15,7 +15,8 @@ public class SpawnManager : MonoBehaviour
 
     bool gameStart = false;
 
-    private GameObject prefabInstance;
+    private GameObject prefabInstance_a;
+    private GameObject prefabInstance_b;
 
     private int MaxSpawned = 2;
 
@@ -30,9 +31,10 @@ public class SpawnManager : MonoBehaviour
         Vector3 spawnPos = new Vector3(14, -1.06f, 0);
 
         int randomNumber = Random.Range(0, groundObstacles.Length);
-        prefabInstance = Instantiate(groundObstacles[randomNumber], transform.position, transform.rotation);
-        prefabInstance = Instantiate(flyingObstacles[randomNumber], spawnPos, transform.rotation);
-        Destroy(prefabInstance, 10f);
+        prefabInstance_a = Instantiate(groundObstacles[randomNumber], transform.position, transform.rotation);
+        prefabInstance_b = Instantiate(flyingObstacles[randomNumber], spawnPos, transform.rotation);
+        Destroy(prefabInstance_a, 10f);
+        Destroy(prefabInstance_b, 10f);
 
     }
 
