@@ -17,6 +17,6 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = Vector2.left * enemySpeed;
+        rb.velocity = enemySpeed * GameManager.Instance.GetScrollSpeed() * Vector2.left;
     }
 }
