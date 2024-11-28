@@ -16,7 +16,7 @@ public class ScrollingBackground : MonoBehaviour
     void Update()
     {
         // Move the background to the left
-        transform.position += Vector3.left * scrollSpeed * Time.deltaTime;
+        transform.position += Vector3.left * scrollSpeed * GameManager.Instance.GetScrollSpeed() * Time.deltaTime;
 
         // Check if the background has moved out of view
         if (transform.position.x < -width)
