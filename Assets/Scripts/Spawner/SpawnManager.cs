@@ -10,8 +10,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private GameObject[] flyingObstacles;
 
-    [SerializeField]
-    private float spawnTime = 3f;
+    private float spawnTime;
 
     bool gameStart = false;
 
@@ -23,6 +22,8 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         gameStart = true;
+        spawnTime = Random.Range(1f, 3f);
+
         StartCoroutine(SpawnEnemies());
     }
 

@@ -13,6 +13,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GroundDetector groundDetector;
 
+    [SerializeField]
+    private ParticleSystem movementEffect;
+
+    [SerializeField]
+    private ParticleSystem fallEffect;
+
     private Rigidbody2D rb;
 
     private const int lives = 3;
@@ -24,6 +30,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         remainingLives = lives;
 
+        movementEffect.Play();
+        
     }
 
     // Update is called once per frame
