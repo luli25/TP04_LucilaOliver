@@ -22,7 +22,7 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         gameStart = true;
-        spawnTime = Random.Range(1f, 3f);
+        spawnTime = Random.Range(0.6f, 1.5f);
 
         StartCoroutine(SpawnEnemies());
     }
@@ -34,8 +34,8 @@ public class SpawnManager : MonoBehaviour
         int randomNumber = Random.Range(0, groundObstacles.Length);
         prefabInstance_a = Instantiate(groundObstacles[randomNumber], transform.position, transform.rotation);
         prefabInstance_b = Instantiate(flyingObstacles[randomNumber], spawnPos, transform.rotation);
-        Destroy(prefabInstance_a, 10f);
-        Destroy(prefabInstance_b, 10f);
+        //Destroy(prefabInstance_a, 10f);
+        //Destroy(prefabInstance_b, 10f);
 
     }
 
