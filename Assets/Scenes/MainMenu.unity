@@ -1691,6 +1691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 939665748}
   - component: {fileID: 939665749}
+  - component: {fileID: 939665750}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -1707,11 +1708,11 @@ Transform:
   m_GameObject: {fileID: 939665747}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.8165588, y: -120.2008, z: -2.5302598}
+  m_LocalPosition: {x: 368.68344, y: 88.7992, z: -2.5302598}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1900288982}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &939665749
 AudioSource:
@@ -1722,7 +1723,7 @@ AudioSource:
   m_GameObject: {fileID: 939665747}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 1086034372243986875, guid: 908c4692c0e1cb94585a79bcdf7b4b27, type: 2}
   m_audioClip: {fileID: 8300000, guid: 596e0f53d0760684897f73aa6d85324a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1809,6 +1810,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &939665750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939665747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc1fd2e5f9246d4fabc6656e58f393c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 908c4692c0e1cb94585a79bcdf7b4b27, type: 2}
 --- !u!1 &948885531
 GameObject:
   m_ObjectHideFlags: 0
@@ -3564,7 +3578,6 @@ RectTransform:
   m_Children:
   - {fileID: 1618541064}
   - {fileID: 284748388}
-  - {fileID: 939665748}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4010,3 +4023,4 @@ SceneRoots:
   - {fileID: 225792062}
   - {fileID: 1900288982}
   - {fileID: 1124545426}
+  - {fileID: 939665748}
