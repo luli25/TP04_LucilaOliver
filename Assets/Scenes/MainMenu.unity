@@ -3769,6 +3769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1927386750}
   - component: {fileID: 1927386751}
+  - component: {fileID: 1927386752}
   m_Layer: 5
   m_Name: Music
   m_TagString: Untagged
@@ -3849,7 +3850,32 @@ MonoBehaviour:
   m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1927386752}
+        m_TargetAssemblyTypeName: MixerController, Assembly-CSharp
+        m_MethodName: SetVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1927386752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927386749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc1fd2e5f9246d4fabc6656e58f393c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 908c4692c0e1cb94585a79bcdf7b4b27, type: 2}
 --- !u!1 &1938388254
 GameObject:
   m_ObjectHideFlags: 0
