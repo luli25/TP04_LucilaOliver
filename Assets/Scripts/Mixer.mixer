@@ -63,6 +63,10 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
+  - guid: 47ab78b8ac4b73447ac320f9dca2bbd7
+    name: fx
+  - guid: fbcf022c7e6b461499db87205d11dc62
+    name: master
   - guid: 36ce198dbd0ade544ba84c18a4594e54
     name: music
   m_AudioMixerGroupViews:

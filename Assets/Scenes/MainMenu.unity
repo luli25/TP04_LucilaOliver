@@ -207,13 +207,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 1466714465}
   m_HandleRect: {fileID: 1512313219}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 100
+  m_MinValue: 0.0001
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 100
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 818596637}
+        m_TargetAssemblyTypeName: VolumeSettings, Assembly-CSharp
+        m_MethodName: SetFXVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &102902527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,6 +1378,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 908c4692c0e1cb94585a79bcdf7b4b27, type: 2}
   musicSlider: {fileID: 1927386751}
+  fxSlider: {fileID: 20595109}
+  masterSlider: {fileID: 2055002769}
+  back: {fileID: 856710629}
+  menuPanel: {fileID: 1618541063}
+  settingsPanel: {fileID: 284748387}
 --- !u!1 &856710627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,7 +1854,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fc1fd2e5f9246d4fabc6656e58f393c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixer: {fileID: 24100000, guid: 908c4692c0e1cb94585a79bcdf7b4b27, type: 2}
 --- !u!1 &948885531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4036,13 +4052,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 1938388255}
   m_HandleRect: {fileID: 1901631700}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 100
+  m_MinValue: 0.0001
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 100
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 818596637}
+        m_TargetAssemblyTypeName: VolumeSettings, Assembly-CSharp
+        m_MethodName: SetMasterVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
