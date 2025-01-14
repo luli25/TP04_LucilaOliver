@@ -16,19 +16,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private ParticleSystem movementEffect;
 
-    [SerializeField]
-    private ParticleSystem fallEffect;
-
     private Rigidbody2D rb;
-
-    private const int lives = 3;
-
-    private int remainingLives;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        remainingLives = lives;
 
         movementEffect.Play();
         

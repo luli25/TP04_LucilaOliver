@@ -21,4 +21,7 @@ public class UI_Score : MonoBehaviour
         score += pointsPerSeconds;
         scoreText.text = score.ToString();
     }
+
+    public float Score {  get { return score; } }
+    
 }

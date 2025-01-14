@@ -8283,7 +8283,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 5
-  m_LinearDrag: 0
+  m_LinearDrag: 0.3
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -9110,7 +9110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa50e2ab91d6a44da3318aef65265db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 720536242}
 --- !u!1 &1915588829
 GameObject:
   m_ObjectHideFlags: 0

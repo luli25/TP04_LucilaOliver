@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
@@ -34,8 +33,6 @@ public class SpawnManager : MonoBehaviour
         int randomNumber = Random.Range(0, groundObstacles.Length);
         prefabInstance_a = Instantiate(groundObstacles[randomNumber], transform.position, transform.rotation);
         prefabInstance_b = Instantiate(flyingObstacles[randomNumber], spawnPos, transform.rotation);
-        //Destroy(prefabInstance_a, 10f);
-        //Destroy(prefabInstance_b, 10f);
 
     }
 
