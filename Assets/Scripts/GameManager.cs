@@ -71,4 +71,6 @@ public class GameManager : MonoBehaviour
         float speedDivider = 10f;
         scrollSpeed = initialScrollSpeed + timer / speedDivider;
     }
+
+    public float GetScore {  get { return score; } }
 }
