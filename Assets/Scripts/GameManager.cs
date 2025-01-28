@@ -18,11 +18,11 @@ public class GameManager : MonoBehaviour
     private float timer;
     private float scrollSpeed;
 
-    public static GameManager Instance {  get; private set; }
+    public static GameManager Instance { get; private set; }
 
     private void Awake()
     {
-        if(Instance != null && Instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(this);
         }
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
         score = (int)(timer * pointsPerSecond);
 
         scoreText.text = string.Format("{0:00000}", score);
-        
+
     }
 
     public void ShowGameOverUI()
